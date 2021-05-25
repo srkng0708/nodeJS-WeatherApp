@@ -8,6 +8,7 @@ const weather = require('./utils/weather')
 
 // USING EXPRESS 
 const app= express()
+const port= process.env.PORT || 3000
 
 // CREATING PATHS 
 const pathToPublicDirectory = path.join(__dirname , '../public')
@@ -78,6 +79,6 @@ app.get('*' , (req, res) => {
 })
 
 // OPENING THE PORT 
-app.listen(3000 , () => {
-    console.log("Server is running on port 3000")
+app.listen(port , () => {
+    console.log("Server is running on port " + port)
 })
