@@ -1,7 +1,3 @@
-console.log("Running on client server")
-
-
-
 const weatherForm = document.querySelector('form')
 const placetofind = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
